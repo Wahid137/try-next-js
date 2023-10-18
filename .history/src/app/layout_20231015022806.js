@@ -1,11 +1,7 @@
 import './globals.css'
-import { Roboto } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ["100", "400", "500", "700"],
-  variable: '--font-roboto'
-})
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Try Next js',
@@ -15,7 +11,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body className={`${roboto.variable}`} font-roboto>
+      <body className={inter.className}>
 
         {children}
 

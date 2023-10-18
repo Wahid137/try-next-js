@@ -6,9 +6,7 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    fontFamily: {
-      roboto: "var(--font-roboto)",
-    }
+    fontFamily
   },
   plugins: [],
 }
